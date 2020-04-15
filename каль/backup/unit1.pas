@@ -71,7 +71,7 @@ var
   a, b, c : Real; //Для хранения промежуточных значений
   znak : String;
 implementation
-   Uses Unit2; // юзяем формы
+   Uses Unit3; // юзяем формы
 {$R *.lfm}
 
 { TForm1 }
@@ -137,7 +137,7 @@ end;
 
 
 
-procedure TForm1.Button20Click(Sender: TObject);
+procedure TForm1.Button20Click(Sender: TObject); // ydalenie a i b
 begin
   Edit1.Clear;
   a:=0;
@@ -161,7 +161,7 @@ end;
 
 procedure TForm1.MenuItem8Click(Sender: TObject); // расширенный калькулятор
 begin
-  Unit2.form2.show;
+  Unit3.form3.show;
   Unit1.form1.Hide;
 end;
 

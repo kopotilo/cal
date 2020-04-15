@@ -40,7 +40,9 @@ type
     Button7: TButton;
     Button8: TButton;
     Button9: TButton;
+    Edit1: TEdit;
     Edit2: TEdit;
+    Edit3: TEdit;
     procedure Button16Click(Sender: TObject);
     procedure Button17Click(Sender: TObject);
     procedure Button18Click(Sender: TObject);
@@ -52,6 +54,8 @@ type
     procedure Button26Click(Sender: TObject);
     procedure ClickButt(Sender: TObject);
     procedure ClickZnakk(Sender: TObject);
+
+
 
   private
 
@@ -72,6 +76,8 @@ implementation
 procedure TForm2.ClickButt(Sender: TObject);  // Для кнопок от 0 до 9
     begin
        Edit2.Text:=Edit2.Text + ( Sender as TButton).Caption;
+
+
 end;
 
 procedure TForm2.Button22Click(Sender: TObject);  // posl simvol
@@ -97,11 +103,11 @@ begin
 end;
 
 procedure TForm2.Button26Click(Sender: TObject);
+Var X : Double;
 begin
-  a := StrToFloat(Edit2.Text);
-  a := sqr(b);
-  Edit2.Text:=FloatToStr(b);
 
+
+X := Power(a + b, -c);
 end;
 
 procedure TForm2.Button21Click(Sender: TObject);  // vse simvoli ydalenie
@@ -120,7 +126,7 @@ end;
 procedure TForm2.Button16Click(Sender: TObject);  // =
 begin
    b := strToFloat(Edit2.Text);
-  Edit2.Clear;
+   Edit2.Clear;
   case znak of
   '+' : c := a+b;
   '-' : c := a-b;
@@ -128,7 +134,7 @@ begin
   '/' : c := a/b;
 
  end;
-  Edit2.Text:= FloatToStr(c);
+  Edit3.Text:= FloatToStr(c);
 end;
 
 procedure TForm2.Button17Click(Sender: TObject); //koren'
@@ -154,6 +160,10 @@ begin
 
     znak :=(Sender as TButton).Caption;
 end;
+
+
+
+
 
 
 
