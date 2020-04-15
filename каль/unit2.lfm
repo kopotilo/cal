@@ -1,0 +1,275 @@
+object Form2: TForm2
+  Left = 1376
+  Height = 300
+  Top = 188
+  Width = 374
+  Caption = 'Form2'
+  ClientHeight = 300
+  ClientWidth = 374
+  LCLVersion = '2.0.6.0'
+  object Button16: TButton
+    Left = 240
+    Height = 89
+    Top = 200
+    Width = 46
+    Caption = '='
+    OnClick = Button16Click
+    TabOrder = 0
+  end
+  object Button15: TButton
+    Left = 184
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+'
+    OnClick = ClickZnakk
+    TabOrder = 1
+  end
+  object Button10: TButton
+    Left = 184
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '-'
+    OnClick = ClickZnakk
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 128
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '3'
+    OnClick = ClickButt
+    TabOrder = 3
+  end
+  object Button14: TButton
+    Left = 128
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = ','
+    OnClick = ClickButt
+    TabOrder = 4
+  end
+  object Button23: TButton
+    Left = 72
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+/-'
+    OnClick = ClickButt
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 72
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '2'
+    OnClick = ClickButt
+    TabOrder = 6
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '1'
+    OnClick = ClickButt
+    TabOrder = 7
+  end
+  object Button13: TButton
+    Left = 16
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '0'
+    OnClick = ClickButt
+    TabOrder = 8
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '4'
+    OnClick = ClickButt
+    TabOrder = 9
+  end
+  object Button5: TButton
+    Left = 72
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '5'
+    OnClick = ClickButt
+    TabOrder = 10
+  end
+  object Button11: TButton
+    Left = 184
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '*'
+    OnClick = ClickZnakk
+    TabOrder = 11
+  end
+  object Button17: TButton
+    Left = 240
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = 'Кор'
+    OnClick = Button17Click
+    TabOrder = 12
+  end
+  object Button18: TButton
+    Left = 240
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = 'x^2'
+    OnClick = Button18Click
+    TabOrder = 13
+  end
+  object Button9: TButton
+    Left = 128
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '9'
+    OnClick = ClickButt
+    TabOrder = 14
+  end
+  object Button8: TButton
+    Left = 72
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '8'
+    OnClick = ClickButt
+    TabOrder = 15
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '7'
+    OnClick = ClickButt
+    TabOrder = 16
+  end
+  object Button22: TButton
+    Left = 16
+    Height = 41
+    Top = 56
+    Width = 102
+    Caption = '<-'
+    OnClick = Button22Click
+    TabOrder = 17
+  end
+  object Button21: TButton
+    Left = 128
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'се'
+    OnClick = Button21Click
+    TabOrder = 18
+  end
+  object Button20: TButton
+    Left = 184
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'с'
+    OnClick = Button20Click
+    TabOrder = 19
+  end
+  object Button19: TButton
+    Left = 240
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = '%'
+    TabOrder = 20
+  end
+  object Edit2: TEdit
+    Left = 14
+    Height = 24
+    Top = 24
+    Width = 272
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'System'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = ClickButt
+    ParentFont = False
+    TabOrder = 21
+  end
+  object Button6: TButton
+    Left = 128
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '6'
+    OnClick = ClickButt
+    TabOrder = 22
+  end
+  object Button12: TButton
+    Left = 184
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '/'
+    OnClick = ClickZnakk
+    TabOrder = 23
+  end
+  object Button24: TButton
+    Left = 296
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'sin'
+    OnClick = Button24Click
+    TabOrder = 24
+  end
+  object Button25: TButton
+    Left = 296
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = 'cos'
+    OnClick = Button25Click
+    TabOrder = 25
+  end
+  object Button26: TButton
+    Left = 296
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = 'x^x'
+    OnClick = Button26Click
+    TabOrder = 26
+  end
+  object Button27: TButton
+    Left = 296
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = 'cos'
+    TabOrder = 27
+  end
+  object Button28: TButton
+    Left = 296
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = 'cos'
+    TabOrder = 28
+  end
+end

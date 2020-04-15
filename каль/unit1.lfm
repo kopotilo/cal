@@ -1,0 +1,266 @@
+object Form1: TForm1
+  Left = 1270
+  Height = 327
+  Top = 149
+  Width = 320
+  Caption = 'Калькулятор'
+  ClientHeight = 307
+  ClientWidth = 320
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Edit1: TEdit
+    Left = 14
+    Height = 24
+    Top = 24
+    Width = 272
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'System'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '1'
+    OnClick = ClickBut
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 72
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '2'
+    OnClick = ClickBut
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 128
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '3'
+    OnClick = ClickBut
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '4'
+    OnClick = ClickBut
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 72
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '5'
+    OnClick = ClickBut
+    TabOrder = 5
+  end
+  object Button6: TButton
+    Left = 128
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '6'
+    OnClick = ClickBut
+    TabOrder = 6
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '7'
+    OnClick = ClickBut
+    TabOrder = 7
+  end
+  object Button8: TButton
+    Left = 72
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '8'
+    OnClick = ClickBut
+    TabOrder = 8
+  end
+  object Button9: TButton
+    Left = 128
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '9'
+    OnClick = ClickBut
+    TabOrder = 9
+  end
+  object Button10: TButton
+    Left = 184
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '-'
+    OnClick = ClickZnak
+    TabOrder = 10
+  end
+  object Button11: TButton
+    Left = 184
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '*'
+    OnClick = ClickZnak
+    TabOrder = 11
+  end
+  object Button12: TButton
+    Left = 184
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '/'
+    OnClick = ClickZnak
+    TabOrder = 12
+  end
+  object Button13: TButton
+    Left = 16
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '0'
+    OnClick = ClickBut
+    TabOrder = 13
+  end
+  object Button14: TButton
+    Left = 128
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = ','
+    OnClick = ClickBut
+    TabOrder = 14
+  end
+  object Button15: TButton
+    Left = 184
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+'
+    OnClick = ClickZnak
+    TabOrder = 15
+  end
+  object Button16: TButton
+    Left = 240
+    Height = 89
+    Top = 200
+    Width = 46
+    Caption = '='
+    OnClick = Button16Click
+    TabOrder = 16
+  end
+  object Button17: TButton
+    Left = 240
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = 'Кор'
+    OnClick = Button17Click
+    TabOrder = 17
+  end
+  object Button18: TButton
+    Left = 240
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = 'x^2'
+    OnClick = Button18Click
+    TabOrder = 18
+  end
+  object Button19: TButton
+    Left = 240
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = '%'
+    OnClick = ClickZnak
+    TabOrder = 19
+  end
+  object Button20: TButton
+    Left = 184
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'с'
+    OnClick = Button20Click
+    TabOrder = 20
+  end
+  object Button21: TButton
+    Left = 128
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'се'
+    OnClick = Button21Click
+    TabOrder = 21
+  end
+  object Button22: TButton
+    Left = 16
+    Height = 41
+    Top = 56
+    Width = 102
+    Caption = '<-'
+    OnClick = Button22Click
+    TabOrder = 22
+  end
+  object Button23: TButton
+    Left = 72
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+/-'
+    OnClick = Button23Click
+    TabOrder = 23
+  end
+  object MainMenu1: TMainMenu
+    left = 288
+    top = 24
+    object MenuItem1: TMenuItem
+      Caption = 'Калькулятор'
+      object MenuItem2: TMenuItem
+        Caption = 'Копировать'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Вставить'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Режим'
+      object MenuItem4: TMenuItem
+        Caption = 'Базовый'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Расширенный'
+        OnClick = MenuItem8Click
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Справка'
+      object MenuItem6: TMenuItem
+        Caption = 'Справка'
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'О программе'
+      end
+    end
+  end
+end
