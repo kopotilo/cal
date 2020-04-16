@@ -1,0 +1,331 @@
+object Form6: TForm6
+  Left = 447
+  Height = 329
+  Top = 337
+  Width = 319
+  Caption = 'Калькулятор'
+  ClientHeight = 309
+  ClientWidth = 319
+  Color = clPurple
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Edit1: TEdit
+    Left = 16
+    Height = 24
+    Top = 24
+    Width = 272
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'System'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 0
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 16
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '0'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 72
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+/-'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton2Click
+  end
+  object SpeedButton3: TSpeedButton
+    Left = 128
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = ','
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton4: TSpeedButton
+    Left = 184
+    Height = 41
+    Top = 248
+    Width = 46
+    Caption = '+'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickZnak
+  end
+  object SpeedButton5: TSpeedButton
+    Left = 240
+    Height = 89
+    Top = 200
+    Width = 46
+    Caption = '='
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton5Click
+  end
+  object SpeedButton6: TSpeedButton
+    Left = 16
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '1'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton7: TSpeedButton
+    Left = 72
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '2'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton8: TSpeedButton
+    Left = 128
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '3'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton9: TSpeedButton
+    Left = 184
+    Height = 41
+    Top = 200
+    Width = 46
+    Caption = '-'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickZnak
+  end
+  object SpeedButton10: TSpeedButton
+    Left = 16
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '4'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton11: TSpeedButton
+    Left = 72
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '5'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton12: TSpeedButton
+    Left = 128
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '6'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton13: TSpeedButton
+    Left = 184
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = '*'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickZnak
+  end
+  object SpeedButton14: TSpeedButton
+    Left = 16
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '7'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton15: TSpeedButton
+    Left = 72
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '8'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton16: TSpeedButton
+    Left = 128
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '9'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickBut1
+  end
+  object SpeedButton17: TSpeedButton
+    Left = 184
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = '/'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = ClickZnak
+  end
+  object SpeedButton18: TSpeedButton
+    Left = 184
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'c'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton18Click
+  end
+  object SpeedButton19: TSpeedButton
+    Left = 128
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = 'ce'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton19Click
+  end
+  object SpeedButton20: TSpeedButton
+    Left = 16
+    Height = 41
+    Top = 56
+    Width = 102
+    Caption = '<-'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+  end
+  object SpeedButton21: TSpeedButton
+    Left = 240
+    Height = 41
+    Top = 56
+    Width = 46
+    Caption = '%'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton21Click
+  end
+  object SpeedButton22: TSpeedButton
+    Left = 240
+    Height = 41
+    Top = 104
+    Width = 46
+    Caption = 'x^2'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton22Click
+  end
+  object SpeedButton23: TSpeedButton
+    Left = 240
+    Height = 41
+    Top = 152
+    Width = 46
+    Caption = 'Кор'
+    Color = clFuchsia
+    Flat = True
+    Transparent = False
+    OnClick = SpeedButton23Click
+  end
+  object MainMenu1: TMainMenu
+    left = 312
+    top = 16
+    object MenuItem1: TMenuItem
+      Caption = 'Калькулятор'
+      object MenuItem2: TMenuItem
+        Caption = 'Копировать'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Вставить'
+        OnClick = MenuItem9Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Режим'
+      object MenuItem4: TMenuItem
+        Caption = 'Базовый'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Расширенный'
+        OnClick = MenuItem8Click
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Справка'
+      object MenuItem6: TMenuItem
+        Caption = 'Справка'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'О программе'
+        OnClick = MenuItem7Click
+      end
+    end
+    object MenuItem10: TMenuItem
+      Caption = 'Тема'
+      object MenuItem11: TMenuItem
+        Caption = 'Обычная'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Детская'
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Тёмнаятема'
+        OnClick = MenuItem13Click
+      end
+    end
+  end
+end

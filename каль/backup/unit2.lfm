@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 388
+  Left = 420
   Height = 371
-  Top = 337
+  Top = 207
   Width = 492
   Caption = 'Form2'
   ClientHeight = 371
@@ -157,6 +157,7 @@ object Form2: TForm2
     Top = 104
     Width = 46
     Caption = '7'
+    Color = 12458054
     OnClick = ClickButt
     TabOrder = 16
   end

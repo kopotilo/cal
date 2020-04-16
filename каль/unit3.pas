@@ -5,7 +5,7 @@ unit Unit3;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus;
 
 type
 
@@ -34,10 +34,25 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    MainMenu1: TMainMenu;
     Memo1: TMemo;
+    MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
+    procedure Button13Click(Sender: TObject);
     procedure Button14Click(Sender: TObject);
     procedure Button15Click(Sender: TObject);
     procedure Button16Click(Sender: TObject);
@@ -46,10 +61,19 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
+    procedure MenuItem10Click(Sender: TObject);
+    procedure MenuItem12Click(Sender: TObject);
+    procedure MenuItem13Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
+    procedure MenuItem8Click(Sender: TObject);
+    procedure MenuItem9Click(Sender: TObject);
 
 
   private
@@ -64,7 +88,7 @@ var
   n : integer;
   const sist:string[16]='0123456789ABCDEF'; //цифры в СС 2-16
 implementation
- uses Unit1, math;
+ uses Unit1,Unit4,Unit5,Unit8,Unit9, math;
 {$R *.lfm}
 
  { TForm3 }
@@ -110,10 +134,18 @@ end;
 
 procedure TForm3.Button12Click(Sender: TObject);
 begin
-  a:=StrToFloat(edit1.Text);
-  b:=StrToFloat(edit2.Text);
-  c:=log10(b)/log10(a);
-  Memo1.Text:=FloatToStr(c);
+  a:=StrToFloat(Edit1.Text);
+  a:=log10(a);
+  Memo1.Text:=FloatToStr(a);
+  a:=0;
+end;
+
+procedure TForm3.Button13Click(Sender: TObject);
+begin
+  a:=StrToFloat(Edit1.Text);
+  a:=abs(a);
+  Memo1.Text:=FloatToStr(a);
+  a:=0;
 end;
 
 procedure TForm3.Button14Click(Sender: TObject);//factorial
@@ -166,6 +198,14 @@ begin
   Memo1.Text:=FloatToStr(c);
 end;
 
+procedure TForm3.Button5Click(Sender: TObject);
+begin
+   a:=StrToFloat(Edit1.Text);
+  a:=a/100;
+  Memo1.Text:=FloatToStr(a);
+  a:=0;
+end;
+
 procedure TForm3.Button6Click(Sender: TObject);  //x^2
 begin
   a := StrToFloat(Edit1.Text);
@@ -196,6 +236,49 @@ procedure TForm3.Button9Click(Sender: TObject); //sin
 begin
   a := StrToInt(Edit1.Text); // Здесь - угол в градусах
   Memo1.Text := FloatToStr(sin(degtorad(a))); // Здесь - значение синуса этого угла
+end;
+
+procedure TForm3.MenuItem10Click(Sender: TObject);
+begin
+  Unit9.form9.show;
+end;
+
+procedure TForm3.MenuItem12Click(Sender: TObject);
+begin
+  Unit4.form4.show;
+  Unit3.form3.Hide;
+end;
+
+procedure TForm3.MenuItem13Click(Sender: TObject);
+begin
+  Unit5.form5.show;
+  Unit3.form3.Hide;
+end;
+
+procedure TForm3.MenuItem2Click(Sender: TObject);
+begin
+  Edit1.CopyToClipboard;
+end;
+
+procedure TForm3.MenuItem6Click(Sender: TObject);
+begin
+  Edit1.PasteFromClipboard;
+end;
+
+procedure TForm3.MenuItem7Click(Sender: TObject);
+begin
+  Unit1.form1.show;
+  Unit3.form3.Hide;
+end;
+
+procedure TForm3.MenuItem8Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm3.MenuItem9Click(Sender: TObject);
+begin
+  Unit8.form8.show;
 end;
 
  { TForm3 }

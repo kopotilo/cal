@@ -38,6 +38,10 @@ type
     Edit1: TEdit;
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -57,7 +61,14 @@ type
     procedure ClickBut(Sender: TObject);
     procedure ClickZnak(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem12Click(Sender: TObject);
+    procedure MenuItem13Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
     procedure MenuItem8Click(Sender: TObject);
+    procedure MenuItem9Click(Sender: TObject);
 
 
   private
@@ -71,7 +82,7 @@ var
   a, b, c : Real; //Для хранения промежуточных значений
   znak : String;
 implementation
-   Uses Unit3; // юзяем формы
+   Uses Unit3,Unit5,Unit6,Unit7,Unit8,Unit9, Unit4; // юзяем формы
 {$R *.lfm}
 
 { TForm1 }
@@ -147,10 +158,9 @@ end;
 
 procedure TForm1.ClickZnak(Sender: TObject);  //
 begin
-  a := StrToFloat(Edit1.Text);
-  Edit1.Clear;
-
-  znak :=(Sender as TButton).Caption;
+ a := StrToFloat(Edit1.Text);
+ Edit1.Clear;
+ znak :=(Sender as Tbutton).Caption;
 
 end;
 
@@ -159,10 +169,47 @@ begin
 
 end;
 
+procedure TForm1.MenuItem11Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuItem12Click(Sender: TObject);
+begin
+  Unit6.form6.show;
+  Unit1.form1.Hide;
+end;
+
+procedure TForm1.MenuItem13Click(Sender: TObject);
+begin
+  Unit7.form7.show;
+  Unit1.form1.Hide;
+end;
+
+procedure TForm1.MenuItem2Click(Sender: TObject);
+begin
+  Edit1.CopyToClipboard;
+end;
+
+procedure TForm1.MenuItem6Click(Sender: TObject);
+begin
+  Unit8.form8.show;
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+begin
+  Unit9.form9.show;
+end;
+
 procedure TForm1.MenuItem8Click(Sender: TObject); // расширенный калькулятор
 begin
   Unit3.form3.show;
   Unit1.form1.Hide;
+end;
+
+procedure TForm1.MenuItem9Click(Sender: TObject);
+begin
+  Edit1.PasteFromClipboard;
 end;
 
 

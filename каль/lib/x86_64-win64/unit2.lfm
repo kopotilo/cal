@@ -1,11 +1,11 @@
 object Form2: TForm2
-  Left = 888
+  Left = 293
   Height = 371
-  Top = 335
+  Top = 46
   Width = 492
   Caption = 'Form2'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 371
+  ClientWidth = 492
   LCLVersion = '2.0.6.0'
   object Button16: TButton
     Left = 240
@@ -157,6 +157,7 @@ object Form2: TForm2
     Top = 104
     Width = 46
     Caption = '7'
+    Color = 12458054
     OnClick = ClickButt
     TabOrder = 16
   end

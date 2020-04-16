@@ -1,0 +1,20 @@
+object Form8: TForm8
+  Left = 1113
+  Height = 240
+  Top = 638
+  Width = 320
+  Caption = 'Справка'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object Edit1: TEdit
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'Справочный материал: лучше не пользуйся этим!'
+  end
+end
